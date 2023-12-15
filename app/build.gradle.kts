@@ -59,4 +59,7 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.5.0")
     /* OkHttpClient */
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
+
+    /* RootBear to check for Rooted Android Devices */
+    implementation("com.scottyab:rootbeer-lib:0.1.0")
 }

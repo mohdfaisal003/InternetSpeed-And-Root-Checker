@@ -10,7 +10,7 @@ import java.io.IOException
 import java.util.concurrent.TimeUnit
 import kotlin.jvm.Throws
 
-class WebConnector {
+open class WebConnector {
 
     /* Interceptor */
     private class NetworkInterceptor: Interceptor {

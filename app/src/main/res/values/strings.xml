@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Rooted &amp; Device Info</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- RootChecker Fragment -->
+    <string name="verify_status">Verify Device Status</string>
+    <string name="device_name">Device Name:</string>
+    <string name="android_version">Android version:</string>
+    <string name="device_is_rooted">Device is Rooted (Not Safe)</string>
+    <string name="device_is_not_rooted">Your Device is Safe</string>
+    <string name="check">Check</string>
+
+    <!-- Quote Fragment -->
+    <string name="daily_quotes">Daily Quotes</string>
+    <string name="new_txt">New</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
 </resources>

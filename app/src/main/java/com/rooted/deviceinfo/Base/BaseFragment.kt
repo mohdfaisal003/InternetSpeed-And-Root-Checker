@@ -7,10 +7,12 @@ import android.view.View.OnClickListener
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
+import com.rooted.deviceinfo.AppUtils.AppUtil
+import com.rooted.deviceinfo.R
 
-abstract class BaseFragment: Fragment(), OnClickListener {
+abstract class BaseFragment : Fragment(), OnClickListener {
 
-    abstract fun layoutRes(): ViewBinding
+    abstract fun layoutRes(): View
     abstract fun initComponents()
 
     override fun onCreateView(
@@ -18,7 +20,7 @@ abstract class BaseFragment: Fragment(), OnClickListener {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return layoutRes().root
+        return layoutRes()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -3,7 +3,29 @@
     <style name="Base.Theme.RootedDeviceInfo" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/clr_status_bar</item>
     </style>
 
     <style name="Theme.RootedDeviceInfo" parent="Base.Theme.RootedDeviceInfo" />
+
+    <style name="AppBackground">
+        <item name="android:background">@color/clr_app_back</item>
+    </style>
+    <style name="Toolbar">
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/clr_app_back</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">6</item>
+    </style>
+    <style name="HeadingTextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Device">
+        <item name="android:background">@drawable/device_shape</item>
+    </style>
 </resources>
