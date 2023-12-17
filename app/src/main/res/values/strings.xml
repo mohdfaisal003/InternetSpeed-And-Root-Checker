@@ -13,12 +13,14 @@
     <string name="device_is_rooted">Device is Rooted (Not Safe)</string>
     <string name="device_is_not_rooted">Your Device is Safe</string>
     <string name="check">Check</string>
+    <string name="checking">Checking…</string>
 
     <!-- Quote Fragment -->
     <string name="daily_quotes">Daily Quotes</string>
     <string name="new_txt">New</string>
     <string name="copy">Copy</string>
     <string name="share">Share</string>
+    <string name="fetching">fetching…</string>
 
     <!-- Internet Availability Messages -->
     <string name="no_internet">No internet check your data connection Cutie :)</string>

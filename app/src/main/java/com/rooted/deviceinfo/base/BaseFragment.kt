@@ -6,8 +6,11 @@ import android.view.View
 import android.view.View.OnClickListener
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.rooted.deviceinfo.R
+import com.rooted.deviceinfo.app_utils.AppUtil
+import com.rooted.deviceinfo.app_utils.NetworkUtil
 
-abstract class BaseFragment : Fragment(), OnClickListener {
+abstract class BaseFragment : Fragment(), OnClickListener, NetworkUtil.ConnectivityChangeListener {
 
     abstract fun layoutRes(): View
     abstract fun initComponents()
@@ -23,6 +26,12 @@ abstract class BaseFragment : Fragment(), OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initComponents()
+    }
+
+    override fun onNetworkChanged(isConnected: Boolean) {
+        if (!isConnected) {
+            AppUtil.showMessageInSnackBar(requireActivity(),getString(R.string.no_internet))
+        }
     }
 
     override fun onClick(view: View?) {

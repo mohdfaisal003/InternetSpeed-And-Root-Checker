@@ -7,6 +7,10 @@ import com.rooted.deviceinfo.app_utils.AppUtil
 import com.rooted.deviceinfo.R
 import com.rooted.deviceinfo.databinding.FragmentRootCheckerBinding
 import com.scottyab.rootbeer.RootBeer
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class RootCheckerFragment : AppBaseFragment() {
 
@@ -23,7 +27,11 @@ class RootCheckerFragment : AppBaseFragment() {
         binding.androidVersionTv.text = AppUtil.ANDROID_VERSION
 
         binding.checkForRootedBtn.setOnClickListener {
-            checkForRoot()
+            CoroutineScope(Dispatchers.IO).launch {
+                binding.rootStatusTv.text = getString(R.string.checking)
+                delay(5000)
+                checkForRoot()
+            }
         }
     }
 
