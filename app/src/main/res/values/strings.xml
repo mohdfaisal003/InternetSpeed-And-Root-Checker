@@ -3,6 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!-- Dashboard -->
+    <string name="access_info">Access Device Information</string>
+
     <!-- RootChecker Fragment -->
     <string name="verify_status">Verify Device Status</string>
     <string name="device_name">Device Name:</string>
@@ -16,4 +19,8 @@
     <string name="new_txt">New</string>
     <string name="copy">Copy</string>
     <string name="share">Share</string>
+
+    <!-- Internet Availability Messages -->
+    <string name="no_internet">No internet check your data connection Cutie :)</string>
+    <string name="internet_available">Internet is available now ;)</string>
 </resources>

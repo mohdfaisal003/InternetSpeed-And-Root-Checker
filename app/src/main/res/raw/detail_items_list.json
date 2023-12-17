@@ -1,0 +1,248 @@
+{
+  "data": [
+    {
+      "position": 0,
+      "title": "Device Info",
+      "type": "device_info",
+      "description": "Name, Model, Manufacturer, Hardware, Display Resolution etc.",
+      "details": [
+        {
+          "detail_type": "manufacturer",
+          "detail_heading": "Manufacturer:"
+        },
+        {
+          "detail_type": "model",
+          "detail_heading": "Model:"
+        },
+        {
+          "detail_type": "name",
+          "detail_heading": "Device Name:"
+        },
+        {
+          "detail_type": "boot_loader",
+          "detail_heading": "Boot Loader:"
+        },
+        {
+          "detail_type": "hardware",
+          "detail_heading": "Hardware/Board:"
+        },
+        {
+          "detail_type": "display",
+          "detail_heading": "Display PPI (Pixel-Per Inch):"
+        },
+        {
+          "detail_type": "resolution",
+          "detail_heading": "Display Resolution:"
+        },
+        {
+          "detail_type": "refresh_rate",
+          "detail_heading": "Refresh Rate:"
+        },
+        {
+          "detail_type": "refresh_rate",
+          "detail_heading": "Refresh Rate:"
+        },
+        {
+          "detail_type": "os_version",
+          "detail_heading": "OS Version:"
+        },
+        {
+          "detail_type": "security_patch",
+          "detail_heading": "Security Patch:"
+        },
+        {
+          "detail_type": "mac_address",
+          "detail_heading": "Mac Address:"
+        },
+        {
+          "detail_type": "display_type",
+          "detail_heading": "Display Type:"
+        }
+      ]
+    },
+    {
+      "position": 1,
+      "title": "CPU Info",
+      "type": "cpu_info",
+      "description": "CPU-Hardware, Model, Number of Cores, Architecture, ABIs etc.",
+      "details": [
+        {
+          "detail_type": "cpu_hardware",
+          "detail_heading": "CPU-Hardware:"
+        },
+        {
+          "detail_type": "cpu_model",
+          "detail_heading": "CPU Model:"
+        },
+        {
+          "detail_type": "number_of_cores",
+          "detail_heading": "Number of Cores:"
+        },
+        {
+          "detail_type": "architecture",
+          "detail_heading": "Architecture:"
+        },
+        {
+          "detail_type": "abis",
+          "detail_heading": "ABIs:"
+        },
+        {
+          "detail_type": "features",
+          "detail_heading": "Features:"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "title": "RAM & GPU Info",
+      "type": "ram_gpu_info",
+      "description": "Device RAM, GPU Vendor, Available RAM, Used RAM, GPU Renderer etc",
+      "details": [
+        {
+          "detail_type": "device_ram",
+          "detail_heading": "Device RAM:"
+        },
+        {
+          "detail_type": "available_ram",
+          "detail_heading": "Available RAM:"
+        },
+        {
+          "detail_type": "used_ram",
+          "detail_heading": "Used RAM:"
+        },
+        {
+          "detail_type": "free_ram",
+          "detail_heading": "Free RAM:"
+        },
+        {
+          "detail_type": "gpu_vendor",
+          "detail_heading": "GPU Vendor:"
+        },
+        {
+          "detail_type": "gpu_renderer",
+          "detail_heading": "GPU Renderer:"
+        },
+        {
+          "detail_type": "open_gl_es_version",
+          "detail_heading": "OpenGL ES Version:"
+        },
+        {
+          "detail_type": "vulkan_supported",
+          "detail_heading": "Vulkan Supported:"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "title": "Battery Info",
+      "type": "battery_info",
+      "description": "Battery level, Status, Type, Voltage, Temperature, Power Source, Health, Max Charging.",
+      "details": [
+        {
+          "detail_type": "battery_level",
+          "detail_heading": "Battery level:"
+        },
+        {
+          "detail_type": "status",
+          "detail_heading": "Status:"
+        },
+        {
+          "detail_type": "type",
+          "detail_heading": "Type:"
+        },
+        {
+          "detail_type": "voltage",
+          "detail_heading": "Voltage:"
+        },
+        {
+          "detail_type": "temperature",
+          "detail_heading": "Temperature:"
+        },
+        {
+          "detail_type": "power_source",
+          "detail_heading": "Power Source:"
+        },
+        {
+          "detail_type": "health",
+          "detail_heading": "Health:"
+        },
+        {
+          "detail_type": "max_charging",
+          "detail_heading": "Max Charging:"
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "title": "Storage Info",
+      "type": "storage_info",
+      "description": "Internal Total, Internal Used, Internal Free, External Available, External Total, External Used, External Free",
+      "details": [
+        {
+          "detail_type": "internal_total",
+          "detail_heading": "Internal Total:"
+        },
+        {
+          "detail_type": "internal_used",
+          "detail_heading": "Internal Used:"
+        },
+        {
+          "detail_type": "internal_free",
+          "detail_heading": "Internal Free:"
+        },
+        {
+          "detail_type": "external_available",
+          "detail_heading": "External Available:"
+        },
+        {
+          "detail_type": "external_total",
+          "detail_heading": "External Total:"
+        },
+        {
+          "detail_type": "external_used",
+          "detail_heading": "External Used:"
+        },
+        {
+          "detail_type": "external_free",
+          "detail_heading": "External Free:"
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "title": "Sensor Info",
+      "type": "sensor_info",
+      "description": "Number of sensors present, Vendor, Version, Int Type, Power, Resolution, Max Range",
+      "details": [
+        {
+          "detail_type": "number_of_sensors",
+          "detail_heading": "Number of sensors present:"
+        },
+        {
+          "detail_type": "vendor",
+          "detail_heading": "Vendor:"
+        },
+        {
+          "detail_type": "version",
+          "detail_heading": "Version:"
+        },
+        {
+          "detail_type": "int_type",
+          "detail_heading": "Int Type:"
+        },
+        {
+          "detail_type": "power",
+          "detail_heading": "Power:"
+        },
+        {
+          "detail_type": "resolution",
+          "detail_heading": "Resolution:"
+        },
+        {
+          "detail_type": ",max_range",
+          "detail_heading": "Max Range:"
+        }
+      ]
+    }
+  ]
+}
