@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.rooted.deviceinfo.R
 import com.rooted.deviceinfo.app_utils.AppUtil
-import com.rooted.deviceinfo.app_utils.NetworkUtil
+import com.rooted.deviceinfo.app_utils.InternetConnectionChecker
 
-abstract class BaseFragment : Fragment(), OnClickListener, NetworkUtil.ConnectivityChangeListener {
+abstract class BaseFragment : Fragment(), OnClickListener, InternetConnectionChecker.ConnectivityChangeListener {
 
     abstract fun layoutRes(): View
     abstract fun initComponents()

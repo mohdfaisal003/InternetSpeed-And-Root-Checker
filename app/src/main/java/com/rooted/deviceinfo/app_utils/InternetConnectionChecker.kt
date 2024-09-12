@@ -10,7 +10,7 @@ import android.net.Network
 import android.net.NetworkCapabilities
 import android.os.Build
 
-object NetworkUtil {
+object InternetConnectionChecker {
 
     interface ConnectivityChangeListener {
         fun onNetworkChanged(isConnected: Boolean)

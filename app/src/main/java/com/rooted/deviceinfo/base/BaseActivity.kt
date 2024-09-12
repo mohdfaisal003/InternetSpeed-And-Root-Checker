@@ -5,10 +5,10 @@ import android.view.View
 import android.view.View.OnClickListener
 import androidx.appcompat.app.AppCompatActivity
 import com.rooted.deviceinfo.app_utils.AppUtil
-import com.rooted.deviceinfo.app_utils.NetworkUtil
+import com.rooted.deviceinfo.app_utils.InternetConnectionChecker
 import com.rooted.deviceinfo.R
 
-abstract class BaseActivity : AppCompatActivity(), OnClickListener, NetworkUtil.ConnectivityChangeListener {
+abstract class BaseActivity : AppCompatActivity(), OnClickListener, InternetConnectionChecker.ConnectivityChangeListener {
 
     abstract fun layoutRes(): View
     abstract fun initComponents()
@@ -17,7 +17,7 @@ abstract class BaseActivity : AppCompatActivity(), OnClickListener, NetworkUtil.
         super.onCreate(savedInstanceState)
         setContentView(layoutRes())
         initComponents()
-        NetworkUtil.setConnectivityChangeListener(this)
+        InternetConnectionChecker.setConnectivityChangeListener(this)
     }
 
     override fun onNetworkChanged(isConnected: Boolean) {

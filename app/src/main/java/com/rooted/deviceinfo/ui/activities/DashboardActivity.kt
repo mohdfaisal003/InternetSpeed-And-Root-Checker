@@ -9,6 +9,7 @@ import com.rooted.deviceinfo.app_utils.AppUtil
 import com.rooted.deviceinfo.databinding.ActivityDashboardBinding
 import com.rooted.deviceinfo.lists.recycler_views.DetailRecyclerView
 import com.rooted.deviceinfo.mvvm.view_models.DetailDataViewModel
+import com.rooted.deviceinfo.ui.fragments.NetworkDetailFragment
 import com.rooted.deviceinfo.ui.fragments.QuoteFragment
 import com.rooted.deviceinfo.ui.fragments.RootCheckerFragment
 
@@ -39,6 +40,14 @@ class DashboardActivity : AppBaseActivity() {
             supportFragmentManager,
             R.id.quote_fragment_container,
             QuoteFragment(),
+            false,
+            null
+        )
+        /* Network Detail Fragment */
+        AppUtil.replaceOrAddFragment(
+            supportFragmentManager,
+            R.id.network_detail_fragment_container,
+            NetworkDetailFragment(),
             false,
             null
         )

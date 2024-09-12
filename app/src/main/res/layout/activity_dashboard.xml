@@ -59,14 +59,27 @@
                 android:layout_marginRight="20sp"
                 android:background="@android:color/darker_gray" />
 
+            <!-- Network Detail Fragment -->
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/network_detail_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:background="@android:color/darker_gray" />
+
             <!-- Device Details -->
             <TextView
+                style="@style/headingTv14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25sp"
                 android:layout_marginTop="20sp"
-                android:text="@string/access_info"
-                style="@style/headingTv14" />
+                android:text="@string/access_info" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/deviceDetailsRV"
@@ -79,5 +92,4 @@
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-
 </RelativeLayout>

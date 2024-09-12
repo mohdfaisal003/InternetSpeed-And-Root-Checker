@@ -25,4 +25,11 @@
     <!-- Internet Availability Messages -->
     <string name="no_internet">No internet check your data connection Cutie :)</string>
     <string name="internet_available">Internet is available now ;)</string>
+
+    <!-- Network Detail Fragment -->
+    <string name="network_txt">Network</string>
+    <string name="bytes_txt">Bytes</string>
+    <string name="kbps_txt">KBPs</string>
+    <string name="mbps_txt">MBPs</string>
+    <string name="gbps_txt">GBPs</string>
 </resources>

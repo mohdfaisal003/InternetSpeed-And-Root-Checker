@@ -1,12 +1,13 @@
 package com.rooted.deviceinfo.ui.fragments
 
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.rooted.deviceinfo.R
 import com.rooted.deviceinfo.app_base.AppBaseFragment
 import com.rooted.deviceinfo.app_utils.AppUtil
-import com.rooted.deviceinfo.app_utils.NetworkUtil
+import com.rooted.deviceinfo.app_utils.InternetConnectionChecker
 import com.rooted.deviceinfo.databinding.FragmentQuoteBinding
 import com.rooted.deviceinfo.mvvm.view_models.QuotesViewModel
 import kotlinx.coroutines.CoroutineScope
@@ -33,8 +34,9 @@ class QuoteFragment : AppBaseFragment() {
             }
         })
 
-        NetworkUtil.setConnectivityChangeListener(this)
+        InternetConnectionChecker.setConnectivityChangeListener(this)
 
+        binding.quoteCard.setOnClickListener(this)
         binding.newBtn.setOnClickListener(this)
         binding.copyBtn.setOnClickListener(this)
         binding.shareBtn.setOnClickListener(this)
@@ -45,7 +47,7 @@ class QuoteFragment : AppBaseFragment() {
             if (isConnected) {
                 binding.dailyQuoteTv.text = getString(R.string.daily_quotes)
                 binding.quoteCard.isEnabled = true
-                binding.quoteCard.setOnClickListener(this@QuoteFragment)
+//                binding.quoteCard.setOnClickListener(this@QuoteFragment)
             } else {
                 binding.dailyQuoteTv.text = getString(R.string.no_internet)
                 binding.quoteCard.isEnabled = false
@@ -69,6 +71,7 @@ class QuoteFragment : AppBaseFragment() {
                     binding.quoteLl.visibility = View.GONE
                     flag = 0
                 }
+                Log.d("onClick", flag.toString())
             }
 
             binding.newBtn.id -> {

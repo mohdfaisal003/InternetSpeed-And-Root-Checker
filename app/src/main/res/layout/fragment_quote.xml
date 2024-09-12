@@ -3,7 +3,7 @@
     style="@style/AppBackground"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="17sp">
+    android:padding="15sp">
 
     <LinearLayout
         android:id="@+id/quoteCard"
