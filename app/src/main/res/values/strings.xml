@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Rooted &amp; Device Info</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Internet &amp; Root Checker</string>
+
+    <string name="app_version">App version 1.0</string>
 
     <!-- Dashboard -->
     <string name="access_info">Access Device Information</string>
@@ -27,7 +27,7 @@
     <string name="internet_available">Internet is available now ;)</string>
 
     <!-- Network Detail Fragment -->
-    <string name="network_txt">Network</string>
+    <string name="network_txt">Network Speed</string>
     <string name="bytes_txt">Bytes</string>
     <string name="kbps_txt">KBPs</string>
     <string name="mbps_txt">MBPs</string>

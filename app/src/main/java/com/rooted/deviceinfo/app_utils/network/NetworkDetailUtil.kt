@@ -7,12 +7,14 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.net.wifi.WifiInfo
 import android.net.wifi.WifiManager
+import android.os.Build
 import android.telephony.CellInfo
 import android.telephony.CellInfoCdma
 import android.telephony.CellInfoGsm
 import android.telephony.CellInfoLte
 import android.telephony.CellInfoNr
 import android.telephony.TelephonyManager
+import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import com.rooted.deviceinfo.mvvm.pojos.CellTowerInfo
 import com.rooted.deviceinfo.mvvm.pojos.CellularData
@@ -25,7 +27,8 @@ import java.util.Enumeration
 
 object NetworkDetailUtil {
 
-    fun getNetworkInfo(context: Context): NetworkInfo? {
+    @RequiresApi(Build.VERSION_CODES.P)
+    fun getNetworkInfo(context: Context): NetworkInfo {
         val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val network = connectivityManager.activeNetwork
         val capabilities = connectivityManager.getNetworkCapabilities(network)
@@ -78,6 +81,7 @@ object NetworkDetailUtil {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.P)
     private fun getCellularInfo(context: Context): CellularData? {
         val telephonyManager = context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
         val signalStrength = telephonyManager.signalStrength?.gsmSignalStrength
@@ -100,6 +104,7 @@ object NetworkDetailUtil {
         )
     }
 
+    @RequiresApi(Build.VERSION_CODES.P)
     private fun getCellTowerInfo(cellInfo: CellInfo?): CellTowerInfo? {
         return cellInfo?.let {
             when (it) {

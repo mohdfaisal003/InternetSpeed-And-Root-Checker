@@ -36,13 +36,13 @@ class DashboardActivity : AppBaseActivity() {
             null
         )
         /* Quote Fragment */
-        AppUtil.replaceOrAddFragment(
+        /*AppUtil.replaceOrAddFragment(
             supportFragmentManager,
             R.id.quote_fragment_container,
             QuoteFragment(),
             false,
             null
-        )
+        )*/
         /* Network Detail Fragment */
         AppUtil.replaceOrAddFragment(
             supportFragmentManager,
@@ -52,9 +52,9 @@ class DashboardActivity : AppBaseActivity() {
             null
         )
         /* Device Details */
-        detailsViewModel.getDetailsList(this)
+        /*detailsViewModel.getDetailsList(this)
         detailsViewModel.detailData.observe(this, Observer {
             DetailRecyclerView(this, binding.deviceDetailsRV, it.data)
-        })
+        })*/
     }
 }

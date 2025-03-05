@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="clr_app_back">#242424</color>
+    <color name="clr_app_back">#FFF</color>
     <color name="clr_status_bar">#242424</color>
     <color name="color_primary">#9966ff</color>
 </resources>
