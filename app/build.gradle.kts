@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.rooted.deviceinfo"
+    namespace = "com.rooted.checker"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.rooted.deviceinfo"
+        applicationId = "com.rooted.checker"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

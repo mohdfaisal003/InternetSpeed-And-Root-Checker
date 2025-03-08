@@ -33,8 +33,8 @@
                 android:text="@string/network_txt" />
 
             <ProgressBar
-                android:layout_width="30dp"
-                android:layout_height="30dp" />
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
         </LinearLayout>
 
         <TextView

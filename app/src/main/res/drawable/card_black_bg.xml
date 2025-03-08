@@ -3,6 +3,6 @@
     android:shape="rectangle">
 
     <solid android:color="@color/clr_app_back"/>
-    <corners android:radius="6sp"/>
+    <corners android:radius="10sp"/>
 
 </shape>

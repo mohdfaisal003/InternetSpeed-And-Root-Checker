@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Rooted & Device Info"
+rootProject.name = "Internet & Root Checker"
 include(":app")
