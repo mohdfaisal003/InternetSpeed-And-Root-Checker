@@ -62,7 +62,7 @@ class NetworkSpeedMonitor(context: Context) {
                         val capabilities = connectivityManager.getNetworkCapabilities(network)!!
                         trackSpeed(capabilities)
                     }
-                    handler.postDelayed(this,3000)
+                    handler.postDelayed(this,1000)
                 }
             })
         }

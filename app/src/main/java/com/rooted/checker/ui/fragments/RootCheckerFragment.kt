@@ -2,9 +2,9 @@ package com.rooted.checker.ui.fragments
 
 import android.graphics.Color
 import android.view.View
+import com.rooted.checker.R
 import com.rooted.checker.app_base.AppBaseFragment
 import com.rooted.checker.app_utils.AppUtil
-import com.rooted.checker.R
 import com.rooted.checker.databinding.FragmentRootCheckerBinding
 import com.scottyab.rootbeer.RootBeer
 import kotlinx.coroutines.CoroutineScope
