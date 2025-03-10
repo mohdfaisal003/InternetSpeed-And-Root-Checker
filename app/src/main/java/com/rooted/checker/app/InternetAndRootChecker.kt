@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import com.rooted.checker.app_utils.InternetConnectionChecker
 import com.rooted.checker.app_utils.network.NetworkSpeedMonitor
 
-class RootedDeviceInfo : Application() {
+class InternetAndRootChecker : Application() {
 
     override fun onCreate() {
         super.onCreate()
